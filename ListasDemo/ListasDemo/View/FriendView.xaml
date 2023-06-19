@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListasDemo.View.FriendView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="First Name:"></Label>
+            <Entry Placeholder="Héctor"
+                   Text="{Binding NewFriend.FirstName}"></Entry>
+            <Label Text="Phone:"></Label>
+            <Entry Placeholder="(333)12345"
+                   Text="{Binding NewFriend.Phone}"></Entry>
+            <Label Text="Email:"></Label>
+            <Entry Placeholder="test@hotmail.com"
+                   Text="{Binding NewFriend.Email}"></Entry>
+            <Button HeightRequest="100"
+                    Text="Save Friend"
+                    Command="{Binding SaveFriendCommand}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
